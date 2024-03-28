@@ -8,10 +8,10 @@ import Link  from 'next/link';
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Home', href: '/dashboard', icon: HomeIcon },
+  { name: 'Home', href: '/', icon: HomeIcon },
   {
     name: 'Invoices',
-    href: '/dashboard',
+    href: '/dashboard/invoies',
     icon: DocumentDuplicateIcon,
   },
   { name: 'Customers', href: '/dashboard', icon: UserGroupIcon },
@@ -23,7 +23,6 @@ export default function NavLinks() {
       {links.map((link) => {
         const LinkIcon = link.icon;
         return (
-          
           <Link
             key={link.name}
             href={link.href}
