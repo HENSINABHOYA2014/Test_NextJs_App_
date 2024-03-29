@@ -14,7 +14,7 @@ import {
 
  
 export default async function Page() {
-  // const revenue = await fetchRevenue();
+  const revenue = await fetchRevenue();
   const latestInvoices = await fetchLatestInvoices();
   const {
     numberOfInvoices,
